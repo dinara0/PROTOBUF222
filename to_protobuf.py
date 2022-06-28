@@ -4,7 +4,7 @@ from PIL import Image
 import base64
 #...
 
-# img = Image.open('moto_results/moto_results/1747.jpg').convert('RGB')
+img2 = Image.open('belka.png')
 img = ('belka.png')
 
 
@@ -14,6 +14,8 @@ my_img = img_copy_pb2.image()
 
 # my_img.width = img.width
 my_img.id = 0
+my_img.width = img2.size[0]
+my_img.height = img2.size[1]
 # my_img.width =  
 # my_metric.name = 'sys.cpu'
 # my_metric.type = 'gauge'
@@ -23,7 +25,7 @@ with open(img, "rb") as image:
   f = image.read()
   b = bytes(f)
   
-# my_img.image = bytearray(open(img).read())
+# my_img.image = bytes(open(img).read())
 # my_img.image = (open(img).read())
 my_img.image = b
 with open('out.bin', 'wb') as f:
