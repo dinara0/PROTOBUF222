@@ -39,7 +39,7 @@ with open('out.bin', 'wb') as f:
 # Save the shape of original matrix.
 # img_shape = img.shape
 
-print(img)
+# print(img)
 
 # message_image = np.ndarray.tobytes(img)
 
