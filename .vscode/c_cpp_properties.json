@@ -3,7 +3,9 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "E:\\Ufanet\\protobuf-cpp-3.21.1\\protobuf-3.21.1",
+                "E:/Ufanet/protobuf-cpp-3.21.1/protobuf-3.21.1/src"
             ],
             "defines": [
                 "_DEBUG",

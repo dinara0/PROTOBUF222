@@ -1,25 +1,19 @@
-
-#include <iostream>
- 
+#include <iostream> 
 #include <google/protobuf/descriptor.h>
 #include <google/protobuf/dynamic_message.h>
 #include <google/protobuf/io/zero_copy_stream_impl.h>
 #include <google/protobuf/io/tokenizer.h>
- 
 #include <google/protobuf/compiler/parser.h>
  
 // Proto definition (can come from any IO source: disk, network, ...):
 char text[] = "syntax=\"proto3\"; \n"
-  "message image {\n
-    int32 id = 1;\n
-    int32 width = 2;\n
-    int32 height = 3;\n
-    bytes image = 4;"
+  "message image {"
+    "int32 id = 1;"
+    "int32 width = 2;"
+    "int32 height = 3;"
+    "bytes image = 4;"
   "}";
 
-
-    
-}
 std::string message_type("APIPort3");
  
 int main() {
